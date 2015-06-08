@@ -227,24 +227,6 @@ One key goal here is we want to use the same codebase on both server and browser
 	- In short, we don't intend to directly reuse the same router on both server and browser, instead we share the routing table to avoid duped work
 
 
-## FAQ
-
-- why not use react-router?
-
-	IMHO __router should not be tightly coupled with the view in any regard__, wrapping it in a `RouteStore` is more flexible and decoupled, also we get to switch out different routers in the future (we used `page.js` in this example, but we tried a bunch of other routers which all worked pretty well)
-
-- is this battle-tested?
-
-	Yes, it's currently in production for some of the sites we are running
-
-- need help?
-
-	- First try the `github issue` section
-
-	- Second, ask in the chat room
-
-	- Lastly, shoot me an [email](jeremy@pubulous.com)
-
 ## Notice
 
 - currently we are relying on a custom-built `flux dispatcher` due to the version available on npm is outdated, once the npm one's updated to the latest `v2.0.3` we will remove the custom-built one.
